@@ -38,10 +38,13 @@ export default class App extends Component {
         
     onCategoryClick = (id, name)=>{
         this.updateCandidate();
+
         this.setState(()=>{
             return{            
                 categoryId: id,
-                categoryName: name
+                categoryName: name,
+                candidates: []
+                
             };
         });
         
